@@ -1,13 +1,14 @@
 function prime(num){
-counter=0;
+count=0;
 for(var i=1;i<=num;i++){
-  if(num%i!=0){
-    counter++;
+  if(num%i==0){
+    count++;
   }
-}if(counter==2){
-  console.log(num," is Prime Number");
+}if(count==2){
+  console.log(num,"is a Prime Number");
 }else{
   console.log(num,"is not a Prime Number");
+
 }
 }
-prime(2);
+prime(4);
